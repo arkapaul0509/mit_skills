@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap.css' %}" />
+    </head>
+<body>
+{% csrf_token %}
+    <br>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well" style="background-color: aqua">
+        <h3 class="text-primary">Mastech Infotrellis Skill Matrix</h3>
+        <hr style="border-top:1px dotted #000;"/>
+        <div class="w3-center w3-animate-top">
+<div class="header">
+<div class="im">
+        {% load static %} <img src="{% static "skillsapp/media/Mastech.jpg" %}" alt="home" />
+        </div>
+</div>
+</div>
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>
